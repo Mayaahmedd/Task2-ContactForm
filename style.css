@@ -1,18 +1,32 @@
+:root {
+    --elevvo-yellow: #ffc400;
+    --dark-green: #222;
+    --form-grey: #232526;
+    --form-grey-light: #414345;
+}
+
+
 body {
-    background: #fff;
+    background: linear-gradient(120deg, var(--form-grey) 0%, var(--form-grey-light) 100%);
     font-family: 'Segoe UI', Arial, sans-serif;
     margin: 0;
     padding: 0;
+    min-height: 100vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .contact-form-container {
     max-width: 400px;
     margin: 40px auto;
-    background: #fff;
+    background: rgba(255,255,255,0.06);
     border-radius: 18px;
     box-shadow: 0 4px 24px rgba(0,0,0,0.08);
     padding: 32px 24px 24px 24px;
     box-sizing: border-box;
+      backdrop-filter: blur(2px);
 }
 
 .logo {
@@ -20,6 +34,14 @@ body {
     justify-content: center;
     margin-bottom: 18px;
 }
+.logo svg {
+    width: 60px;
+    height: 60px;
+    background: var(--elevvo-yellow);
+    border-radius: 16px;
+    padding: 8px;
+}
+
 .logo img {
     width: 60px;
     height: 60px;
@@ -30,7 +52,7 @@ body {
 
 h2 {
     text-align: center;
-    color: #222;
+    color: #fff;
     margin-bottom: 18px;
     font-weight: 700;
     letter-spacing: 1px;
@@ -39,7 +61,7 @@ h2 {
 .contact-form label {
     display: block;
     margin-bottom: 6px;
-    color: #222;
+    color: #fff;
     font-weight: 500;
 }
 
@@ -49,17 +71,19 @@ h2 {
     padding: 12px 14px;
       max-width: 320px;
     margin-bottom: 12px;
-    border: 2px solid #ffcb2b;
+    border: 2px solid var(--elevvo-yellow);
     border-radius: 8px;
     font-size: 1rem;
-    background: #fffbe6;
+     background: rgba(255,255,255,0.15);
+     color: #fff;
     transition: border 0.2s;
     outline: none;
 }
 
 .contact-form input:focus,
 .contact-form textarea:focus {
-    border-color: #222;
+    border-color: #fff;
+    background: rgba(255,255,255,0.22);
 }
 
 .contact-form textarea {
@@ -70,8 +94,8 @@ h2 {
 .contact-form button {
     width: 100%;
     padding: 14px;
-    background: #ffcb2b;
-    color: #222;
+    background: var(--elevvo-yellow);
+    color: var(--dark-green);
     border: none;
     border-radius: 8px;
     font-size: 1.1rem;
@@ -79,11 +103,12 @@ h2 {
     cursor: pointer;
     transition: background 0.2s, color 0.2s;
     letter-spacing: 1px;
+    margin-top: 8px;
 }
 
 .contact-form button:hover {
-    background: #222;
-    color: #ffcb2b;
+    background: #ffe066;
+    color: var(--dark-green);
 }
 
 #f
