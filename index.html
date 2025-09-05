@@ -9,7 +9,7 @@
 <body>
     <div class="contact-form-container">
         <div class="logo">
-            <!-- SVG logo here -->
+          
             <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
                 <circle cx="24" cy="24" r="22" fill="#ffc400" stroke="#222" stroke-width="2"/>
                 <ellipse cx="17" cy="22" rx="4" ry="6" fill="white"/>
@@ -22,13 +22,13 @@
         <h2>Contact Us</h2>
         <form class="contact-form" id="contactForm" novalidate>
             <label for="fullname">Full Name</label>
-            <input type="text" id="fullname" name="fullname" required>
+            <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
             <label for="email">Email Address</label>
-            <input type="email" id="email" name="email" required>
+            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
             <label for="subject">Subject</label>
-            <input type="text" id="subject" name="subject" required>
+            <input type="text" id="subject" name="subject" placeholder="What is this about?" required>
             <label for="message">Message</label>
-            <textarea id="message" name="message" required></textarea>
+            <textarea id="message" name="message" placeholder="Tell us more about your inquiry..." required></textarea>
             <button type="submit">Submit</button>
             <div id="form-message"></div>
         </form>
